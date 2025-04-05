@@ -1,0 +1,5 @@
+.nav-link.matriculas:hover {
+    background-color: blue;  /* Mantém o fundo azul */
+    color: white;  /* Muda o texto para branco */
+    border-color: #007bff;  /* Garante que a borda fique com a mesma cor */
+}

@@ -1,0 +1,244 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Logo principal */
+.navbar-logo {
+    margin-right: 20px;
+}
+
+.navbar-logo img {
+    height: 150px;
+    width: auto;
+}
+
+/* Remove espaço extra acima do banner */
+.hero {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Ajuste para responsividade no mobile */
+@media (max-width: 768px) {
+
+    .navbar-collapse {
+        background-color: #084381; /* Cor de fundo do menu */
+        padding: 15px 0; /* Espaçamento interno para o menu */
+    }
+
+    .nav-link {
+        color: white !important; /* Garante que o texto dos links seja branco */
+        padding: 10px 0; /* Adiciona mais espaço entre os links */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+    }
+
+    .nav-link:hover {
+        background-color: #13036f; /* Cor de fundo no hover */
+        color: white; /* Mantém a cor do texto no hover */
+    }
+    .navbar-logo img {
+        height: 80px; /* Reduz o tamanho da logo no mobile */
+        margin: 0 auto; /* Centraliza a logo */
+        display: block; /* Garante que ela fique em uma nova linha */
+    }
+
+    .navbar {
+        padding-top: 10px; /* Adiciona um espaço acima do menu */
+    }
+
+    .navbar-nav {
+        margin-top: 10px; /* Dá mais espaço para o menu quando colapsado */
+    }
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: right; /* Centraliza o conteúdo dentro do menu */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Alinha os links em coluna */
+        align-items: flex-end; /* Centraliza os itens horizontalmente */
+    }
+
+    .nav-link {
+        margin: 5px 0;
+        text-align: right; /* Adiciona espaçamento entre os links */
+    }
+}
+
+@media (max-width: 991.98px) { /* Esconde em telas menores que "large" */
+    .logo-text {
+        display: none;
+    }
+}
+
+.info-section {
+    background-color: #f8f9fa;
+}
+
+.info-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.info-section ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-section .btn-outline-primary {
+    border-color: #084381;
+    color: #094381;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.info-section .btn-outline-primary:hover {
+    background-color: #184779;
+    color: white;
+}
+
+
+.text-primary .mb-4 {
+    color: #003366; /* Escolha um azul mais forte */
+}
+
+
+
+/* Sessão "target-audience" */
+/* Sessão "target-audience" */
+.target-audience {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.target-audience h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.audience-box {
+    background-color: #084381; /* Cor azul do card */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.audience-box img {
+    width: 120%;
+    height: 250px; /* Altura fixa para uniformizar */
+    object-fit: cover; /* Garante que a imagem preencha o card sem distorcer */
+}
+
+.audience-box .card-text {
+    padding: 15px;
+    flex: 1; /* Ajusta o espaço ocupado pelo texto no card */
+}
+
+.audience-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.audience-box p {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+/* Efeito de hover */
+.audience-box:hover {
+    transform: scale(1.1); /* Amplia o card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+/* Ajustando o layout responsivo para os cards */
+@media (max-width: 768px) {
+    .audience-box {
+        height: 350px; /* Ajusta a altura para dispositivos menores */
+    }
+}
+
+.info-section-2{
+    background-color: #003366;
+}
+
+/* bolas */
+/* Responsividade para as bolas */
+.bola-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.bola {
+    width: 240px;
+    padding: 20px;
+    background-color: #13036f;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.bola img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.bola-texto {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.unique-parceira {
+    background-color: #ED1941; /* Fundo vermelho personalizado */
+    color: white; /* Texto branco */
+}
+
+.unique-parceira a.btn-outline-primary {
+    color: white; /* Cor do texto do botão */
+    border-color: white; /* Borda branca */
+}
+
+.unique-parceira a.btn-outline-primary:hover {
+    background-color: white; /* Fundo branco no hover */
+    color: #ED1941; /* Texto vermelho no hover */
+}
+
+.unique-matriculas-index {
+    background-color: #ffffff; /* Fundo vermelho personalizado */
+    color: white; /* Texto branco */
+}
+
+.unique-formulario1 label {
+    color: #084381;
+}

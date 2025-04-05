@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco - Speed Way</title>
+
+    <style>
+        .unique-trabalhe-conosco {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .unique-formulario {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-header {
+            background-color: #003366; /* Azul escuro */
+            color: #ffffff;
+        }
+
+        #text-main{
+            color: #003366;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="custom-header py-3 text-center">
+        <h1>Trabalhe Conosco</h1>
+    </header>
+
+    <section class="unique-trabalhe-conosco">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-4">
+                    <h2 class="text-main">Junte-se à nossa equipe!</h2>
+                    <p class="lead">Você é professor, coordenador pedagógico ou possui outra habilidade que possa contribuir para o nosso time? Envie sua mensagem e faça parte da Speed Way!</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="p-4 unique-formulario" action="https://formspree.io/f/mwppjzeb" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Celular/WhatsApp</label>
+                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="area" class="form-label">Área de Interesse</label>
+                            <select class="form-select" id="area" name="area" required>
+                                <option value="" disabled selected>Selecione sua área</option>
+                                <option value="Professor">Professor</option>
+                                <option value="Coordenador Pedagógico">Coordenador Pedagógico</option>
+                                <option value="Assistente Administrativo">Assistente Administrativo</option>
+                                <option value="Outra">Outra</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-4 py-2">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Speed Way. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
